@@ -26,7 +26,7 @@ The **Library Management System API** is a Spring Boot application that provides
 - **Java 22**
 - **Maven**
 - **MySQL** (or any other relational database)-created with H2
-- Books and patrons tables filled with dummy data for testing- you can change on `src/main/resources/data.sql`
+- **Intial-tables** Book and Patron tables already filled with dummy data for testing, Check `src/main/resources/data.sql`
 
 ### Installation
 
