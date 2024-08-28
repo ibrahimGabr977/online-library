@@ -26,6 +26,7 @@ The **Library Management System API** is a Spring Boot application that provides
 - **Java 22**
 - **Maven**
 - **MySQL** (or any other relational database)-created with H2
+- Books and patrons tables filled with dummy data for testing- you can change on `src/main/resources/data.sql`
 
 ### Installation
 
@@ -42,6 +43,10 @@ The **Library Management System API** is a Spring Boot application that provides
      spring.datasource.username=root
      spring.datasource.password=yourpassword
      spring.jpa.hibernate.ddl-auto=update
+     spring.application.name=online-library
+     spring.datasource.generate-unique-name=false
+     spring.sql.init.mode=always
+     spring.jpa.show-sql=true
      ```
 
 3. **Build and Run the Application**:
@@ -64,17 +69,6 @@ The **Library Management System API** is a Spring Boot application that provides
   ```
   POST /api/books
   ```
-
-## 🧪 Testing
-
-The project includes unit tests to validate the functionality of the API. Run the tests using:
-```bash
-mvn test
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
 
